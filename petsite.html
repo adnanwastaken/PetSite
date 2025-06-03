@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetSite</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Caveat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+
+  <header class="navbar" id="navbar">
+    <div class="logo">🐾 PetSite</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#volunteer">Volunteer</a></li>
+      <li><a href="stories.html">Stories</a></li>
+      <li><a href="#adopt">Adopt</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content" data-aos="fade-up">
+      <h1>Making Cities <span class="highlight">Paw-some!</span> 🐶</h1>
+      <p>Join the movement and change lives, one paw at a time.</p>
+      <div class="cta-buttons">
+        <a href="#volunteer" class="btn">Join the Movement 🚀</a>
+        <a href="about.html" class="btn secondary">Learn More 🐾</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="volunteer" id="volunteer" data-aos="zoom-in">
+    <h2>Become a Volunteer ❤️</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <select required>
+        <option value="">Select State</option>
+        <option value="Telangana">Telangana</option>
+      </select>
+      <select required>
+        <option value="">Select City</option>
+        <option value="Hyderabad">Hyderabad</option>
+      </select>
+      <input type="text" placeholder="Email" required />
+       <input type="text" placeholder="Phone Number" required />
+      <select required>
+        <option value="">Select Role</option>
+        <option value="awareness">Awareness Campaign</option>
+        <option value="adoption">Adoption Drives</option>
+        <option value="events">Pet Events</option>
+      </select>
+      <button type="submit">Sign Me Up 🙌</button>
+    </form>
+  </section>
+
+  <section class="adopt" id="adopt" data-aos="fade-up">
+    <h2>Adopt a Pet Today 🐾</h2>
+    <div class="carousel">
+      <div class="pet-card"><img src="image/puppy1.jpg" alt="Puppy 1" /><p>Bella</p></div>
+      <div class="pet-card"><img src="image/kitten1.jpg" alt="Kitten 1" /><p>Milo</p></div>
+      <div class="pet-card"><img src="image/puppy2.jpg" alt="Puppy 2" /><p>Rocky</p></div>
+      <div class="pet-card"><img src="image/kitten2.jpg" alt="Kitten 2" /><p>Luna</p></div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" data-aos="flip-left">
+    <h2>Let's Connect 💌</h2>
+    <p>Have any queries or ideas? Email us at <a href="mailto:petsite@collegetips.in">petsite@collegetips.in</a></p>
+  </section>
+
+  <footer>
+    <p>Built with 🧡 by Adnaan🐕</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('change', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
+
